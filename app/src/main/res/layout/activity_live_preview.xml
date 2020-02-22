@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fireTopLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:keepScreenOn="true">
+
+  <xyz.enterkey.mlkitdemo.vision.common.CameraSourcePreview
+      android:id="@+id/firePreview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true">
+
+      <xyz.enterkey.mlkitdemo.vision.common.GraphicOverlay
+          android:id="@+id/fireFaceOverlay"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_alignParentStart="true"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentBottom="true"/>
+  </xyz.enterkey.mlkitdemo.vision.common.CameraSourcePreview>
+
+  <TextView android:id="@+id/text"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:paddingLeft="80dp"
+      android:paddingStart="80dp"
+      android:paddingEnd="0dp"
+      android:paddingRight="0dp"
+      android:textColor="#FFF"
+      android:textSize="20sp"
+      android:textStyle="bold" />
+
+  <LinearLayout
+      android:id="@+id/control"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_alignParentBottom="true"
+      android:layout_alignParentStart="true"
+      android:layout_toEndOf="@id/firePreview"
+      android:padding="8dp"
+      android:background="#CCFFFFFF">
+
+      <ToggleButton
+          android:id="@+id/facingSwitch"
+          android:layout_width="36dp"
+          android:layout_height="36dp"
+          android:layout_gravity="center"
+          android:background="@drawable/toggle_style"
+          android:textOff=""
+          android:textOn=""
+          android:checked="false" />
+
+      <Spinner
+          android:layout_marginStart="4dp"
+          android:layout_marginEnd="0dp"
+          android:id="@+id/spinner"
+          android:layout_width="0dp"
+          android:layout_weight="1"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center" />
+
+  </LinearLayout>
+
+</RelativeLayout>
