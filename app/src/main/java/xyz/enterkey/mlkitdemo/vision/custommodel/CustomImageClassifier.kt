@@ -108,7 +108,7 @@ internal constructor(context: Context, private val useQuantizedModel: Boolean) {
                         .requireWifi()
                         .build() // Update condition that requires wifi.
                 } else {
-                    FirebaseModelDownloadConditions.Builder().build(); // Download condition.
+                    FirebaseModelDownloadConditions.Builder().build() // Download condition.
                 }
                 firebaseModelManager.download(remoteModel, conditions)
             }
@@ -306,12 +306,12 @@ internal constructor(context: Context, private val useQuantizedModel: Boolean) {
         /**
          * Name of the floating point model uploaded to the Firebase console.
          */
-        private const val REMOTE_FLOAT_MODEL_NAME = "mobilenet_float_v2_1.0_299"
+        private const val REMOTE_FLOAT_MODEL_NAME = "mobilenet_float_v2"
 
         /**
          * Name of the quantized model uploaded to the Firebase console.
          */
-        private const val REMOTE_QUANT_MODEL_NAME = "mobilenet_quant_v2_1.0_299"
+        private const val REMOTE_QUANT_MODEL_NAME = "mobilenet_quant_v2"
 
         /**
          * Name of the label file stored in Assets.

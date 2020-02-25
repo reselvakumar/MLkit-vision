@@ -14,5 +14,8 @@ Landmark recognition feature of ML Kit in your application [Kotlin].
 - Run the sample on an Android device.
 - Try this for [mlkit with new material guidlines](https://github.com/selva27/MLkit-vision-material).
 
+## Demo
+[Demo.apk](demo/demo.apk)
+
 ## License
 [APACHE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
